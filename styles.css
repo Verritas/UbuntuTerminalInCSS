@@ -23,7 +23,7 @@
     align-items: center;
 }
 
-.Toolbar_option {
+.Toolbar_button {
     width: 12px;
     height: 12px;
     box-sizing: border-box;
@@ -77,6 +77,31 @@
 .Prompt_location {
     color: #6d85a9;
   }
-  .Prompt_dollar {
+
+.Prompt_dollar {
     color: #ddd;
+}
+
+.Prompt_cursor {
+    height: 17px;
+    width: 8px;
+    background: white;
+    display: block;
+    margin-left: 8px;
+    animation: 2000ms ease infinite alternate blink;
+}
+  
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .Textarea_input {
+      background: transparent;
+      border: none;
+      resize:none;
   }
